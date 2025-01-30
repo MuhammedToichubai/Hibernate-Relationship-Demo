@@ -1,4 +1,10 @@
 package peaksoft.dao;
 
-public class ProfileDao {
+import peaksoft.models.Profile;
+
+public interface ProfileDao {
+    void save(Long userId, Profile profile);
+    void deleteById(Long profileId);
+
 }
+
